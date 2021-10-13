@@ -17,6 +17,12 @@ public class DbServiceResource {
     public DbServiceResource(QuotesRepository quotesRepository) {
         this.quotesRepository = quotesRepository;
     }
+    
+    @GetMapping("/")
+    public String getWelcome() {
+
+        return ("<h>welcome</h1>");
+    }
 
     @GetMapping("/{username}")
     public List<String> getQuotes(@PathVariable("username") final String username) {

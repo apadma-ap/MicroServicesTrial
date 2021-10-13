@@ -1,16 +1,17 @@
-package com.myrefresh.microservices.dbservice;
+package com.myrefresh.microservices.apigatewayservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @EnableEurekaClient
 @SpringBootApplication
-public class DbServiceApplication {
+
+public class ApiGatewayServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DbServiceApplication.class, args);
+		SpringApplication.run(ApiGatewayServiceApplication.class, args);
 	}
 
 }
